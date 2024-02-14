@@ -1,0 +1,57 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+  font-family: 'Amatic SC', cursive;
+}
+.App {
+  text-align: center;
+}
+
+.cat {
+  height: 40vmin;
+  margin-right: 40px;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(25px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+button {
+  font-size: calc(15px + 2vmin);
+  border-radius: 10px;
+  border: none;
+  width: 70px;
+  height: 50px;
+  transition: top 0.5s ease, left 0.5s ease; /* Add transitions for top and left */
+}
+
+.move-button {
+  transition: top 0.5s ease, left 0.5s ease; /* Add transitions for top and left */
+}
+
+@media screen and (max-width: 992px) {
+  body.mobile {
+
+  }
+
+  body.mobile .no {
+    margin-left: -100px;
+  }
+  body.mobile .yes {
+    margin-left: 50px;
+  }
+}
